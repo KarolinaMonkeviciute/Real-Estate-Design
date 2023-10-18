@@ -12,7 +12,7 @@ _website design project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: 
+Site published at: https://karolinamonkeviciute.github.io/realEstate/
 
 Design: [REAL ESTATE](https://dribbble.com/shots/10172325/attachments/2114690?mode=media)
 

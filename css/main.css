@@ -3,11 +3,36 @@ body {
 }
 header {
     width: 1000px;
+    margin-top: 20px;
     margin-left: calc(50% - 500px);
     background-color: yellow;
+    display: inline-block;
 }
 header > img {
     width: 100px;
     height: 30px;
-    background-color: red;
+    float: left;
+    margin-top: 5px;
+   
+}
+div {
+    float: right;
+}
+nav {
+    float: left;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+a {
+    font-size: 20px;
+    line-height: 20px;
+}
+a + a {
+    margin-left: 30px;
+}
+div > img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    border-radius: 50%;
 }
