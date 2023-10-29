@@ -12,97 +12,111 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+
 </head>
 <body">
-    <header>
-        <img src="./img/logo.webp" alt="Logo">
-       <div><nav>
-            <a href="">Buy</a>
-            <a href="">Rent</a>
-            <a href="">Agent</a>
-            <a href="">About</a>
+    <header class="main-header">
+        <img class="logo" src="./img/logonew.webp" alt="Logo">
+       <div class="main-header-right-side">
+        <nav>
+            <a class="menu" href="#">Buy</a>
+            <a class="menu" href="#">Rent</a>
+            <a class="menu" href="#">Agent</a>
+            <a class="menu" href="#">About</a>
         </nav>
-        <img src="./img/user.webp" alt="User avatar">
+        <img class="user-avatar" src="./img/user.webp" alt="User avatar">
         </div>
     </header>
 
     <main>
-        <section>
-            <div>
-                <h1>We help you find your dream home.</h1>
-                <form>
-                    <div>
-                        <button type="button">Buy</button>
-                        <button type="button">Rent</button>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="main-heading">We help you find your dream home.</h1>
+                    <div class="container">
+                        <div class="buy-button">
+                            <label>
+                                <input type="checkbox">
+                                <span>Buy</span>
+                            </label>
+                        </div>
+                        <div class="rent-button">
+                            <label>
+                                <input type="checkbox">
+                                <span>Rent</span>
+                            </label>
+                        </div>
                     </div>
-                    <div>
-                        <input type="text">
-                        <button type="submit"></button>
+                    <div class="search">
+                        <label class="label" for="search">Search for city or zip code</label>
+                        <input class="input" id="search" type="text" placeholder="Search for City, Zip...">
+                        <button class="fa fa-search search-btn" type="submit"></button>
                     </div>
-                </form>
             </div>
         </section>
-        <section>
-                <div>
-                    <h2>
-                    TOP NEIGHBORHOOD
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing.
-                    </p>
+        <section class="neighborhood">
+            <div class="title">
+                <h2 class="title-heading">Top neighborhood</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="items">
+                <div class="item-one">
+                    <div class="info">
+                        <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
+                        <p class="name">Name</p>
+                    </div>
+                    <div class="price">Price / Sq.Ft.</div>
                 </div>
-                <div>
-                    <div>
-                        <img src="#" alt="House">
-                        <div>$1862 / Sq.Ft.</div>
-                        <div>
-                            <p>ICON + New York, NY</p>
-                            <p>Carroll Gardens</p>
+                    <div class="item-two">
+                        <div class="info">
+                            <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
+                            <p class="name">Name</p>
                         </div>
-                        <div>
-                            <img src="#" alt="House">
-                            <div>$1862 / Sq.Ft.</div>
-                            <div>
-                                <p>ICON + New York, NY</p>
-                                <p>Carroll Gardens</p>
+                        <div class="price">Price / Sq.Ft.</div>
+                    </div>
+                        <div class="item-three">
+                            <div class="info">
+                                <p class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location</p>
+                                <p class="name">Name</p>
                             </div>
-                            <div>
-                                <img src="#" alt="House">
-                                <div>$1862 / Sq.Ft.</div>
-                                <div>
-                                    <p>ICON + New York, NY</p>
-                                    <p>Carroll Gardens</p>
-                                </div>
-                    </div>
-                    <a href="#"></a>
-                </div>
-         </section>
-        <section>
-                <h2>
-                    RECOMMENDED FOR YOU
-                </h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing.
-                </p>
-                <div>
-                    <img src="#" alt="House">
-                    <div>
-                        <p>$ 123,456</p>
-                        <p>121 Street name</p>
-                        <p>City, Country ZIP code</p>
-                        <div>ICON</div>
-                        <div>ICON</div>
-                        <div>ICON</div>
-                    </div>
-                    <div>
-                        <p>$ 123,456</p>
-                        <p>121 Street name</p>
-                        <p>City, Country ZIP code</p>
-                        <div>ICON</div>
-                        <div>ICON</div>
-                        <div>ICON</div>
+                            <div class="price">Price / Sq.Ft.</div>
+                            <div class="button">
+                                <a class="btn" href="#">See all</a>
+                            </div>
+                        </div>
+            </div>
+        </section>
+        <section class="recommended">
+            <div class="recommended-text">
+                <h2 class="title-heading">Recommended for you</h2>
+                <p class="title-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+            <div class="recommended-items">
+                <div class="item">
+                    <div class="image"></div>
+                    <div class="info">
+                        <p class="price">Price</p>
+                        <p class="address-one">Address</p>
+                        <p class="address-two">Address</p>
+                        <p class="benefits"><i class="fa fa-bath" aria-hidden="true"></i> Baths <i class="fa fa-bed" aria-hidden="true"></i> Beds <i class="fa fa-object-group" aria-hidden="true"></i> Footage</p>
+                        <div class="bookmark"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                                              <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            </div>
                     </div>
                 </div>
+            <div class="item">
+                <div class="image"></div>
+                <div class="info">
+                    <p class="price">Price</p>
+                    <p class="address-one">Address</p>
+                    <p class="address-two">Address</p>
+                    <p class="benefits"><i class="fa fa-bath" aria-hidden="true"></i> Baths <i class="fa fa-bed" aria-hidden="true"></i> Beds <i class="fa fa-object-group" aria-hidden="true"></i> Footage</p>
+                    <div class="bookmark"><i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                        <i class="fa fa-bookmark" aria-hidden="true"></i>
+                     </div>
+                </div>
+            </div>
+        </div>
         </section>
     </main>
 </body>
